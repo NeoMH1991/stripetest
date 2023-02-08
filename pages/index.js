@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -12,44 +12,41 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <h1 className={styles.title}>Servicing Packages: </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+        <br />
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <h2>Silver Service Package</h2>
+            <h3>$78.00 (PROMO)</h3>
+            <p>Fully synthetic 5W30 Engine oil 4L</p>
+            <p>Oil filter- OEM</p>
+            <p>33 points check</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <a href="https://nextjs.org/docs" className={styles.card}>
+            <h2>Gold Service Package</h2>
+            <h3>$148.00</h3>
+            <p>Fully synthetic 5W30 Engine oil 4L (Made in Japan)</p>
+            <p>Oil filter- OEM</p>
+            <p>33 points check</p>
           </a>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <a href="https://nextjs.org/docs" className={styles.card}>
+            <h2>Platinum Service Package</h2>
+            <h3>$168.00</h3>
+            <p>Fully synthetic 5W30 Engine oil 4L (Made in France)</p>
+            <p>Oil filter- OEM</p>
+            <p>33 points check</p>
           </a>
 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+          <a href="https://nextjs.org/docs" className={styles.card}>
+            <h2>LiquidMoly Service Package</h2>
+            <h3>$188.00</h3>
+            <p>Fully synthetic 5W40 Engine oil 4L (Made in Germany) </p>
+            <p>Oil filter</p>
+            <p>50 points check</p>
           </a>
         </div>
       </main>
@@ -60,12 +57,12 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
           </span>
         </a>
       </footer>
     </div>
-  )
+  );
 }
