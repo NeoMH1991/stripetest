@@ -18,6 +18,21 @@ export default function Home() {
         <br />
 
         <div className={styles.grid}>
+          <button
+            onClick={() => {
+              checkout({
+                lineItems: [
+                  {
+                    price: "price_1MZ1B8GQwZ3hbkvU41dYUGsw",
+                    quantity: 1,
+                  },
+                ],
+              });
+            }}
+          >
+            BUY ME
+          </button>
+
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Shell Service Package</h2>
             <h3>$128.00</h3>
