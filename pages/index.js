@@ -18,7 +18,9 @@ export default function Home() {
         <br />
 
         <div className={styles.grid}>
+          {/* SHELL PACKAGE */}
           <button
+            className={styles.card}
             onClick={() => {
               checkout({
                 lineItems: [
@@ -30,40 +32,83 @@ export default function Home() {
               });
             }}
           >
-            BUY ME
+            <a>
+              <h2>Shell Service Package</h2>
+              <h3>$128.00</h3>
+              <p>Fully synthetic 5W30 Engine oil 4L (Basic)</p>
+              <p>Oil filter- OEM</p>
+              <p>33 points check</p>
+            </a>
           </button>
 
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Shell Service Package</h2>
-            <h3>$128.00</h3>
-            <p>Fully synthetic 5W30 Engine oil 4L (Basic)</p>
-            <p>Oil filter- OEM</p>
-            <p>33 points check</p>
-          </a>
+          {/* MOBIL PACKAGE */}
+          <button
+            className={styles.card}
+            onClick={() => {
+              checkout({
+                lineItems: [
+                  {
+                    price: "price_1MZ1C8GQwZ3hbkvUfOmyhNxA",
+                    quantity: 1,
+                  },
+                ],
+              });
+            }}
+          >
+            <a>
+              <h2>Mobil Service Package</h2>
+              <h3>$138.00</h3>
+              <p>Fully synthetic 5W30 Engine oil 4L (USA)</p>
+              <p>Oil filter- OEM</p>
+              <p>33 points check</p>
+            </a>
+          </button>
 
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Mobil-one Service Package</h2>
-            <h3>$138.00</h3>
-            <p>Fully synthetic 5W30 Engine oil 4L (Made in USA)</p>
-            <p>Oil filter- OEM</p>
-            <p>33 points check</p>
-          </a>
+          {/* CASTROL PACKAGE */}
+          <button
+            className={styles.card}
+            onClick={() => {
+              checkout({
+                lineItems: [
+                  {
+                    price: "price_1MZ1CQGQwZ3hbkvUMGWVciUo",
+                    quantity: 1,
+                  },
+                ],
+              });
+            }}
+          >
+            <a>
+              <h2>Castrol Service Package</h2>
+              <h3>$148.00</h3>
+              <p>Fully synthetic 5W30 Engine oil 4L (France)</p>
+              <p>Oil filter- OEM</p>
+              <p>33 points check</p>
+            </a>
+          </button>
 
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Castrol Service Package</h2>
-            <h3>$148.00</h3>
-            <p>Fully synthetic 5W30 Engine oil 4L (Made in France)</p>
-            <p>Oil filter- OEM</p>
-            <p>33 points check</p>
-          </a>
-
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>LiquidMoly Service Package</h2>
-            <h3>$158.00</h3>
-            <p>Fully synthetic 5W40 Engine oil 4L (Made in Germany) </p>
-            <p>Oil filter</p>
-            <p>50 points check</p>
-          </a>
+          {/* CASTROL PACKAGE */}
+          <button
+            className={styles.card}
+            onClick={() => {
+              checkout({
+                lineItems: [
+                  {
+                    price: "price_1MZ1CnGQwZ3hbkvUXDpMeFu9",
+                    quantity: 1,
+                  },
+                ],
+              });
+            }}
+          >
+            <a>
+              <h2>LiquidMoly Service Package</h2>
+              <h3>$158.00</h3>
+              <p>Fully synthetic 5W30 Engine oil 4L (Germany)</p>
+              <p>Oil filter- OEM</p>
+              <p>33 points check</p>
+            </a>
+          </button>
         </div>
       </main>
 
