@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import { checkout } from "../checkout";
 
 export default function Home() {
   return (
@@ -18,24 +19,24 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Silver Service Package</h2>
-            <h3>$78.00 (PROMO)</h3>
-            <p>Fully synthetic 5W30 Engine oil 4L</p>
+            <h2>Shell Service Package</h2>
+            <h3>$128.00</h3>
+            <p>Fully synthetic 5W30 Engine oil 4L (Basic)</p>
             <p>Oil filter- OEM</p>
             <p>33 points check</p>
           </a>
 
           <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Gold Service Package</h2>
+            <h2>Mobil-one Service Package</h2>
+            <h3>$138.00</h3>
+            <p>Fully synthetic 5W30 Engine oil 4L (Made in USA)</p>
+            <p>Oil filter- OEM</p>
+            <p>33 points check</p>
+          </a>
+
+          <a href="https://nextjs.org/docs" className={styles.card}>
+            <h2>Castrol Service Package</h2>
             <h3>$148.00</h3>
-            <p>Fully synthetic 5W30 Engine oil 4L (Made in Japan)</p>
-            <p>Oil filter- OEM</p>
-            <p>33 points check</p>
-          </a>
-
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Platinum Service Package</h2>
-            <h3>$168.00</h3>
             <p>Fully synthetic 5W30 Engine oil 4L (Made in France)</p>
             <p>Oil filter- OEM</p>
             <p>33 points check</p>
@@ -43,7 +44,7 @@ export default function Home() {
 
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>LiquidMoly Service Package</h2>
-            <h3>$188.00</h3>
+            <h3>$158.00</h3>
             <p>Fully synthetic 5W40 Engine oil 4L (Made in Germany) </p>
             <p>Oil filter</p>
             <p>50 points check</p>
